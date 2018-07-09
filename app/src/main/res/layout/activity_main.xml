@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewApp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="202dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="28dp"
+        android:textSize="15sp"
+        android:text="@string/city" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="89dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="@string/temp"
+        android:layout_alignStart="@+id/city"
+        android:layout_marginTop="81dp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/city"
+        android:layout_marginTop="126dp"
+        android:text="@string/desc" />
+
+    <TextView
+        android:id="@+id/wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/city"
+        android:layout_marginTop="150dp"
+        android:text="@string/wind" />
+
+    <TextView
+        android:id="@+id/windAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/wind"
+        android:layout_marginStart="100dp"
+        android:text="@string/windAnswer" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/city"
+        android:layout_marginTop="170dp"
+        android:text="Pressure: " />
+
+    <TextView
+        android:id="@+id/pressureAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/windAnswer"
+        android:layout_alignTop="@+id/pressure"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/city"
+        android:layout_marginTop="190dp"
+        android:text="Humidity: " />
+
+    <TextView
+        android:id="@+id/humidityAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/windAnswer"
+        android:layout_alignTop="@+id/humidity"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/sunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/city"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="210dp"
+        android:text="Sunrise: " />
+
+    <TextView
+        android:id="@+id/sunriseAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/windAnswer"
+        android:layout_alignTop="@+id/sunrise"
+        android:text="TextView" />
+
+
+    <TextView
+        android:id="@+id/sunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/city"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="230dp"
+        android:text="Sunset: " />
+
+    <TextView
+        android:id="@+id/sunsetAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/windAnswer"
+        android:layout_alignTop="@+id/sunset"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/iconWeather"
+        android:layout_width="110dp"
+        android:layout_height="97dp"
+        android:layout_alignBottom="@+id/wind"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="34dp"
+        app:srcCompat="@drawable/icons8_rain_48"
+        android:contentDescription="@string/icon" />
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/city"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:text="Min Temp: " />
+
+    <TextView
+        android:id="@+id/minTempAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/windAnswer"
+        android:layout_alignTop="@+id/minTemp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/maxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/city"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="270dp"
+        android:text="Max Temp: " />
+
+    <TextView
+        android:id="@+id/maxTempAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/windAnswer"
+        android:layout_alignTop="@+id/maxTemp"
+        android:text="TextView" />
+
+</RelativeLayout>

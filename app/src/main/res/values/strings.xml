@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="weatherDisplay">Weather Display</string>
+    <string name="author">by Marcus Urakawa</string>
+    <string name="city">Cork City, Co Cork, Ireland</string>
+    <string name="temp">19°C:</string>
+    <string name="desc">Broken Clouds:</string>
+    <string name="wind">Wind:</string>
+    <string name="windAnswer">TextView</string>
+    <string name="icon">Icon</string>
+
+
+</resources>
